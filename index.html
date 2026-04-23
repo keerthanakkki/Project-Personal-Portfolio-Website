@@ -4,81 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keerthana K | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Keerthana K</h1>
-    <p>Information Science Engineering Student</p>
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#contact">Contact</a>
-    </nav>
+<!-- Navigation -->
+<header id="header">
+    <div class="nav-container">
+        <h1 class="logo">Keerthana K</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<main>
+<!-- Hero -->
+<section id="hero">
+    <div class="hero-content">
+        <h2>Hi, I'm Keerthana K 👋</h2>
+        <p>Information Science Engineering Student</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/profile.jpeg" alt="Profile photo of Keerthana K" width="150">
-        <p>Hi! I'm <strong>Keerthana K</strong>, an Information Science Engineering student passionate about AI, Machine Learning, and full-stack development.</p>
-        <p>I enjoy building projects and solving problems through code.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/keerthana-krishnamurthy" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/keerthanakkki" target="_blank">GitHub</a>
-        </p>
+<main class="container">
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <img src="images/profile.jpeg" alt="Profile photo of Keerthana K" class="profile-img">
+            <div class="about-text">
+                <p>Hi! I'm <strong>Keerthana K</strong>, an Information Science Engineering student passionate about AI, Machine Learning, and full-stack development.</p>
+                <p>I enjoy building projects and solving problems through code.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/keerthana-krishnamurthy" target="_blank" class="btn">LinkedIn</a>
+                    <a href="https://github.com/keerthanakkki" target="_blank" class="btn">GitHub</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
 
-        <h3>Programming Languages</h3>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C</li>
-        </ul>
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C</li>
+                </ul>
+            </div>
 
-        <h3>Web Development</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
 
-        <h3>Database</h3>
-        <ul>
-            <li>MySQL</li>
-        </ul>
+            <div class="skill-card">
+                <h3>Database</h3>
+                <ul>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>📧 <a href="mailto:keerthanakrishnamurthy27@gmail.com">keerthanakrishnamurthy27@gmail.com</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-email">📧 <a href="mailto:keerthanakrishnamurthy@gmail.com">keerthanakrishnamurthy@gmail.com</a></p>
 
-        <form action="#" method="post">
+        <form action="#" method="post" class="contact-form">
 
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2"><br><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2">
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required minlength="10"></textarea><br><br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="10"></textarea>
 
-            <button type="submit">Send Message</button>
-            <button type="reset">Clear</button>
+            <div class="form-buttons">
+                <button type="submit" class="btn">Send Message</button>
+                <button type="reset" class="btn btn-outline">Clear</button>
+            </div>
 
         </form>
     </section>
 
 </main>
 
-<footer>
-   
-    <p><a href="#about">Back to Top</a></p>
+<footer id="footer">
+    <p>© 2025 Keerthana K</p>
+    <a href="#hero" class="footer-link">Back to Top ↑</a>
 </footer>
 
 </body>
